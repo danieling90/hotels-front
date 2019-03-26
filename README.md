@@ -7,6 +7,7 @@ $ ng build --prod --output-path docs --base-href /<project_name>/
 ```
 
 Donde <project_name> sera el nombre del sitio por ejemplo http://localhost/hotels-front
+
 De esta manera consultara el API en la siguiente URL https://api-rest-hotels.herokuapp.com/
 
 
