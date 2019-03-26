@@ -1,0 +1,11 @@
+<div class="filters__panel-filter">
+  <div class="filter_title">
+    <i class="appicon icon-search primary_color"></i>
+    <label class="primary_color">Nombre del hotel</label>
+    <i (click)="showPanel = !showPanel" [ngClass]="{'triangle_up': !showPanel, 'triangle_down': showPanel}"></i>
+  </div>
+  <div class="filters__content-btn" [hidden]="!showPanel">
+    <input class="input" type="text" placeholder="Ingrese el nombre del hotel" [(ngModel)]="name">
+    <button class="filters__btn primary_bg" (click)="filter()">Aceptar</button>
+  </div>
+</div>

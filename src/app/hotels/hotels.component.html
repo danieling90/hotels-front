@@ -1,0 +1,26 @@
+<section class="list-main">
+  <div class="alert-error" *ngIf="error">
+    <strong>Error!</strong> Ocurrió un error consultando el listado de hoteles
+  </div>
+
+  <div class="pager" *ngIf="!error">
+    <span>{{(allRows === 0) ? 0 : paging.Start}}–{{(paging.End > allRows) ? allRows : paging.End}} de {{allRows}}</span>
+    <i (click)="changePager('previous')" class="icon__arrow-back" [ngClass]="{'disabled': paging.Start === 1}"></i>
+    <i (click)="changePager('next')" class="icon__arrow-next" [ngClass]="{'disabled': paging.End >= allRows}"></i>
+  </div>
+  <div class="list__cards" *ngIf="!error">
+    <app-hotel class="list__card" *ngFor="let hotel of hotels" [hotel]="hotel"></app-hotel>
+  </div>
+</section>
+
+
+
+<div id="contentLoader" *ngIf="loading">
+  <div id="loader" class="loaded">
+    <div class="bar primary_bg"></div>
+    <div class="bar primary_bg"></div>
+    <div class="bar primary_bg"></div>
+    <div class="bar primary_bg"></div>
+    <div class="bar primary_bg"></div>
+  </div>
+</div>

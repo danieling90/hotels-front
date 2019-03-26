@@ -1,0 +1,95 @@
+@font-face {
+	font-family: "WebComponentsAlmundoIcons";
+	src: url('./assets/fonts/WebComponentsAlmundoIcons.eot');
+	src: url('./assets/fonts/WebComponentsAlmundoIcons.eot?#iefix') format('eot'),
+		url('./assets/fonts/WebComponentsAlmundoIcons.woff') format('woff'),
+		url('./assets/fonts/WebComponentsAlmundoIcons.ttf') format('truetype')
+}
+
+.appicon:before {
+	font-family: "WebComponentsAlmundoIcons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.appicon.icon-bathrobes:before {
+	content: "\E001";
+}
+
+.appicon.icon-bathtub:before {
+	content: "\E002";
+}
+
+.appicon.icon-beach-pool-facilities:before {
+	content: "\E003";
+}
+
+.appicon.icon-beach:before {
+	content: "\E004";
+}
+
+.appicon.icon-business-center:before {
+	content: "\E005";
+}
+
+.appicon.icon-children-club:before {
+	content: "\E006";
+}
+
+.appicon.icon-coffe-maker:before {
+	content: "\E007";
+}
+
+.appicon.icon-deep-soaking-bathtub:before {
+	content: "\E008";
+}
+
+.appicon.icon-fitness-center:before {
+	content: "\E009";
+}
+
+.appicon.icon-garden:before {
+	content: "\E00A";
+}
+
+.appicon.icon-kitchen-facilities:before {
+	content: "\E00B";
+}
+
+.appicon.icon-newspaper:before {
+	content: "\E00C";
+}
+
+.appicon.icon-nightclub:before {
+	content: "\E00D";
+}
+
+.appicon.icon-restaurant:before {
+	content: "\E00E";
+}
+
+.appicon.icon-safety-box:before {
+	content: "\E00F";
+}
+
+.appicon.icon-search:before {
+	content: "\E010";
+}
+
+.appicon.icon-separate-bredroom:before {
+	content: "\E011";
+}
+
+.appicon.icon-sheets:before {
+	content: "\E012";
+}
+
+.appicon.icon-star:before {
+	content: "\E013";
+}

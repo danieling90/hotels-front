@@ -1,0 +1,20 @@
+<div class="list__card-image">
+   <img [src]="imagePath" />
+</div>
+<div class="list__card-info">
+  <label class="primary_color">{{hotel.name}}</label>
+  <div class="list__card-stars">
+    <i *ngFor="let a of [0,1,2,3,4]; let i = index" [hidden]="i >= hotel.stars" class="appicon icon-star"></i>
+  </div>
+  <div class="list__card-amenities">
+    <i *ngFor="let amenity of hotel.amenities" class="amenity appicon icon-{{amenity}}" title="{{amenity}}"></i>
+  </div>
+</div>
+<div class="list__card-price">
+  <label>Precio por noche por habitación</label>
+  <div>
+    <label class="second_color">ARS </label>
+    <label class="price second_color">{{hotel.price}}</label>
+  </div>
+  <button class="list__card-btn primary_bg" disabled="disabled" title="La información no se encuentra disponible" >Ver Hotel</button>
+</div>

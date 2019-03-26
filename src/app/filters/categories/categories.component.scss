@@ -1,0 +1,97 @@
+@media only screen and (min-width: 600px) {
+  .filters__panel-filter {
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    box-shadow: 0px 0px 1px 1px rgba(204, 204, 204, 0.9);
+    border-radius: 3px;
+    .filter_title {
+      display: flex;
+      padding-bottom: 10px;
+      i {
+        font-size: 14px;
+      }
+      label {
+        padding-left: 6px;
+        font-weight: bold;
+      }
+    }
+    .input {
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 35px;
+    }
+    .filters__stars {
+      position: relative;
+      .filters__stars-option {
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+        > label {
+          font-weight: bold;
+          font-size: 13px;
+        }
+        .checkbox {
+          margin-right: 10px;
+        }
+        .icon-star {
+          color: #ffbb00;
+          font-size: 16px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 579px) {
+  .filters__panel-filter {
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    .filter_title {
+      display: flex;
+      padding-bottom: 10px;
+      i {
+        font-size: 14px;
+      }
+      label {
+        padding-left: 6px;
+        font-weight: bold;
+      }
+    }
+    .input {
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 35px;
+    }
+    .filters__stars {
+      position: relative;
+      .filters__stars-option {
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+        > label {
+          font-weight: bold;
+          font-size: 13px;
+        }
+        .checkbox {
+          margin-right: 10px;
+        }
+        .icon-star {
+          color: #ffbb00;
+          font-size: 16px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

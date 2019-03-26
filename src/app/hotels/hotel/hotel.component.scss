@@ -1,0 +1,140 @@
+@media only screen and (min-width: 600px) {
+  .list__card-image {
+    display: flex;
+    justify-content: left;
+    width: auto;
+    img {
+      position: relative;
+      min-width: 300px;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  .list__card-info {
+    margin-left: 20px;
+    border-right: 1px #444444 dashed;
+    width: 40%;
+    > label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .list__card-stars {
+      padding: 10px 0px;
+      .icon-star {
+        color: #ffbb00;
+        font-size: 20px;
+        padding-left: 6px;
+      }
+    }
+    .list__card-amenities {
+      position: relative;
+      .amenity {
+        font-size: 22px;
+        padding-left: 10px;
+      }
+    }
+  }
+  .list__card-price {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0;
+    > label {
+      font-size: 14px;
+    }
+    > div {
+      > label {
+        font-size: 35px;
+      }
+      .price {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: bold;
+      }
+    }
+    .list__card-btn {
+      border: none;
+      height: 40px;
+      width: 120px;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 579px) {
+  .list__card-image {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    img {
+      position: relative;
+    }
+  }
+  .list__card-info {
+    padding: 10px 0px;
+    border-bottom: 1px #444444 dashed;
+    border-right: none;
+    margin-left: 0;
+    width: auto;
+    > label {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .list__card-stars {
+      padding: 10px 0px;
+      .icon-star {
+        color: #ffbb00;
+        font-size: 20px;
+        padding-left: 6px;
+      }
+    }
+    .list__card-amenities {
+      position: relative;
+      .amenity {
+        font-size: 22px;
+        padding-left: 10px;
+      }
+    }
+  }
+  .list__card-price {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 19px 0px;
+    width: initial;
+    > label {
+      font-size: 14px;
+    }
+    > div {
+      > label {
+        font-size: 35px;
+      }
+      .price {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: bold;
+      }
+    }
+    .list__card-btn {
+      border: none;
+      height: 40px;
+      width: 90%;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

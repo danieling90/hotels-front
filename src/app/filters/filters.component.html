@@ -1,0 +1,14 @@
+<aside class="filters-main">
+	<div class="filters__header">
+		<label class="primary_color" (click)="showPanel = !showPanel">Filtrar</label>
+		<i class="triangle_down" (click)="showPanel = !showPanel" [ngClass]="{'triangle_up': !showPanel, 'triangle_down': showPanel}"></i>
+	</div>
+
+	<div class="filters__panel primary_border" [hidden]="!showPanel">
+		<div class="filters__header-desktop">
+			<label>Filtros</label>
+		</div>
+		<app-searcher></app-searcher>
+		<app-categories></app-categories>
+	</div>
+</aside>

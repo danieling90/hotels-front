@@ -1,0 +1,33 @@
+<div class="filters__panel-filter">
+  <div class="filter_title">
+    <i class="appicon icon-star primary_color"></i>
+    <label class="primary_color">Estrellas</label>
+    <i (click)="showPanel = !showPanel" [ngClass]="{'triangle_up': !showPanel, 'triangle_down': showPanel}"></i>
+  </div>
+  <div class="filters__stars" [hidden]="!showPanel">
+    <div class="filters__stars-option">
+      <input class="checkbox" type="checkbox" [(ngModel)]="model.allStars" (change)="selectStar('allStars')" [disabled]="model.allStars">
+      <label>Todas las estrellas</label>
+    </div>
+    <div class="filters__stars-option">
+      <input class="checkbox" type="checkbox" [(ngModel)]="model.fiveStar" (change)="selectStar('fiveStar')">
+      <i *ngFor="let a of [0,1,2,3,4]" class="appicon icon-star"></i>
+    </div>
+    <div class="filters__stars-option">
+      <input class="checkbox" type="checkbox" [(ngModel)]="model.fourStar" (change)="selectStar('fourStar')">
+      <i *ngFor="let a of [0,1,2,3]" class="appicon icon-star"></i>
+    </div>
+    <div class="filters__stars-option">
+      <input class="checkbox" type="checkbox" [(ngModel)]="model.threeStar" (change)="selectStar('threeStar')">
+      <i *ngFor="let a of [0,1,2]" class="appicon icon-star"></i>
+    </div>
+    <div class="filters__stars-option">
+      <input class="checkbox" type="checkbox" [(ngModel)]="model.twoStar" (change)="selectStar('twoStar')">
+      <i *ngFor="let a of [0,1]" class="appicon icon-star"></i>
+    </div>
+    <div class="filters__stars-option">
+      <input class="checkbox" type="checkbox" [(ngModel)]="model.oneStar" (change)="selectStar('oneStar')">
+      <i *ngFor="let a of [0]" class="appicon icon-star"></i>
+    </div>
+  </div>
+</div>
